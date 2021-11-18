@@ -51,6 +51,9 @@ class Calculator {
         default:
           return
       }
+      if (prev === 9 && current === 10) {
+          computation = 21
+      }
       this.currentOperand = computation
       this.operation = undefined
       this.previousOperand = ''
